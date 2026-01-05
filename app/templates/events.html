@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" action="/add">
+<input name="title" placeholder="Title" required>
+<input type="datetime-local" name="start" required>
+<input type="datetime-local" name="end" required>
+<input name="description" placeholder="Description">
+<button class="btn btn-primary">Add Event</button>
+</form>
+
+<table class="table mt-3">
+<tr><th>Title</th><th>Start</th><th>End</th></tr>
+{% for e in events %}
+<tr><td>{{ e.title }}</td><td>{{ e.start_time }}</td><td>{{ e.end_time }}</td></tr>
+{% endfor %}
+</table>
+{% endblock %}

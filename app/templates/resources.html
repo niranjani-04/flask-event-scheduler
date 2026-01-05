@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" action="/resources/add">
+<input name="name" placeholder="Resource Name" required>
+<input name="type" placeholder="Resource Type" required>
+<button class="btn btn-primary">Add Resource</button>
+</form>
+
+<ul class="mt-3">
+{% for r in resources %}
+<li>{{ r.resource_name }} ({{ r.resource_type }})</li>
+{% endfor %}
+</ul>
+{% endblock %}
