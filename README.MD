@@ -32,7 +32,7 @@ This project was developed as part of the Flask Hiring Test for Tridots Tech.
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/your-username/flask-event-scheduler.git
+git clone https://github.com/niranjani-04/flask-event-scheduler.git
 cd flask-event-scheduler
 ###Step 2: Create Virtual Environment
 
